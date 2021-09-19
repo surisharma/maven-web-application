@@ -9,14 +9,16 @@ node
   {
    sh "${mavenHome}/bin/mvn clean package"   
   }
-  / *stage ('Code tesing')
+  /* 
+  stage ('Code tesing')
   {
   sh "${mavenHome}/bin/mvn sonar:sonar"
   }
   stage ('UploadartifactintoNexus')
   {
    sh "${mavenHome}/bin/mvn deploy"
-   } */
+   }
+   */
    stage ('Deployment')
    {
    sshagent(['1facf916-ccc4-4cda-83e5-3057bf6f914b'])
@@ -24,9 +26,11 @@ node
     sh "scp -o  StrictHostKeyChecking=no target/maven-web-application.war ec2-user@13.235.83.62:/opt/apache-tomcat-9.0.53/webapps"     
     }   
     }
-   /* stage ('Mail Notifucation')
+   /* 
+   stage ('Mail Notifucation')
     {
         mail bcc: '', body: 'Bulid deploy', cc: '', from: '', replyTo: '', subject: 'Build Sucess', to: 'surinder280@gmail.com'
-    } */
+    }
+    */
 }
   
