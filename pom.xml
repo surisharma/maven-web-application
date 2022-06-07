@@ -105,7 +105,7 @@
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Suri Technologies Snapshot Nexus Repository </name>
-	      <url>http://54.152.17.62:8180/repository/flipkart-snapshots/</url>
+	      <url>http://54.152.17.62:8180/repository/flipkart-snapshot/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
