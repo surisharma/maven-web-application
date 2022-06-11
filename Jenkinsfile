@@ -1,8 +1,4 @@
-node('nodes')
-{
-  def mavenHome = tool name: "maven 3.6.2"
-  // properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '5', daysToKeepStr: '', numToKeepStr: '5')), pipelineTriggers([pollSCM('* * * * *')])])
-  // node
+node
 {
     def mavenHome = tool name: "maven3.6.2"
     stage ('CodeGet')
@@ -13,7 +9,7 @@ node('nodes')
     {
     sh "${mavenHome}/bin/mvn clean package"
     }
-	/* stage ('ExcuteSonar')
+	/*stage ('ExcuteSonar')
 	{
 	sh "${mavenHome}/bin/mvn sonar:sonar"
 	}
@@ -31,8 +27,5 @@ node('nodes')
 	mail bcc: '', body: '''Please check the Build.
     Regards,
     Surinder''', cc: '', from: '', replyTo: '', subject: 'Build Completed', to: 'surinder280@gmail.com'
-    }
-    */
+    } */
 }
-
-  
