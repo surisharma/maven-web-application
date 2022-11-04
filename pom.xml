@@ -21,7 +21,7 @@
 		<spring.version>5.1.2.RELEASE</spring.version>
 		<junit.version>4.11</junit.version>
 		<log4j.version>1.2.17</log4j.version>
-		<sonar.host.url>http://54.224.186.218:9000/</sonar.host.url>
+		<sonar.host.url>http://54.163.35.145:9000/</sonar.host.url>
                 <sonar.login>squ_bb254b19859090dd3a3365adf80a35d477505c35</sonar.login>
 		<!-- <sonar.password></sonar.password>  -->
               
@@ -99,13 +99,13 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>Suri Technologies Releases Nexus Repository</name>
-	      <url>http://3.82.218.97:8180/repository/flipkart-releases/</url>
+	      <url>http://184.73.113.200:8081/repository/Wallmart-release/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Suri Technologies Snapshot Nexus Repository </name>
-	      <url>http://3.82.218.97:8180/repository/flipkart-snapshot/</url>
+	      <url>http://184.73.113.200:8081/repository/Wallmart-snapshot/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
