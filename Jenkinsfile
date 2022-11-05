@@ -1,6 +1,6 @@
 node
 {
-    def mavenHome = tool name: "maven3.6.2"
+    def mavenHome = tool name: "mvn-3.6.2"
     properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '5', daysToKeepStr: '', numToKeepStr: '5')), pipelineTriggers([pollSCM('* * * * *')])])	
     stage ('CodeGetGIT')
     {
